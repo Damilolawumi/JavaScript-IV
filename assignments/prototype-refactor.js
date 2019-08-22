@@ -1,7 +1,8 @@
+//commented the assignment from yesterday as seen below
 
 //Prototype Refactor
 
-//1. Copy and paste your code or the solution from yesterday
+//1. Copy and paste your code or the solution from yesterday  
 
 
 // function Person(name, age) {
