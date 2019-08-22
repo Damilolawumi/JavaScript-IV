@@ -1,4 +1,6 @@
 // CODE here for your Lambda Classes
+
+//this is the person class
 class Person {
     constructor(name, age, location) {
         this.name = name;
@@ -10,7 +12,7 @@ class Person {
     }
 }
 
-
+//created the class instructor that extends the person class
 class Instructor extends Person {
     constructor(name, age, location, specalty, favLanguage, catchPhrase) {
         super(name, age, location)
@@ -25,7 +27,7 @@ class Instructor extends Person {
         return `${student.name} receives a perfect score on ${subject}`;
     }
 }
-
+// created the class student that extends the person class
 
 class Student extends Person {
     constructor(name, age, location, className, previousBackground, favSubjects) {
@@ -47,7 +49,7 @@ class Student extends Person {
     }
 }
 
-
+// created a class projectManager that extends the instructor class which in turn extends the person class.
 class ProjectManager extends Instructor {
     constructor(name, age, location, specalty, favLanguage, catchPhrase, gradClassName, favInstructor) {
         super(name, age, location, specalty, favLanguage, catchPhrase)
@@ -62,3 +64,13 @@ class ProjectManager extends Instructor {
         return `${this.name} debugs ${student.name}'s code on ${subject}`
     }
 }
+
+
+// const studentDami = new Student("Dami",10,"Lagos","CS123",'teacher', ['Html', 'CSS', 'JavaScript'])
+// studentDami.listsSubjects();
+
+
+// let projectManagerAkin = new ProjectManager("Akinyemi",40,"Lagos",'Redux',"Javascript","Don't forget the homies",'CS1',"Sean")
+
+// const debug = projectManagerAkin.debugsCode(studentDami, "CSS")
+// console.log(debug)
